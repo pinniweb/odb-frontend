@@ -1,0 +1,26 @@
+query FindCategoryQuery ($sort: String, $limit: Int, $start: Int, $where: JSON ) {
+  categories(sort: $sort, limit: $limit, start: $start, where: $where) {
+    _id
+    name
+    metaTitle
+    slug
+    description
+    metaDescription
+    posts {
+      _id
+      title
+      metaTitle
+      excerpt
+      metaDescription
+      slug
+      content
+      createdAt
+      image {
+        url              
+      }
+      thumbnail {
+        url
+      }
+    }
+  }
+}

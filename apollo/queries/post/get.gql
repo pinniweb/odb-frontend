@@ -1,0 +1,23 @@
+query GetPostQuery($id: ID!) {
+  post(id: $id) {
+    _id
+    title
+    metaTitle
+    excerpt
+    metaDescription
+    slug
+    content
+    createdAt
+    image {
+      url              
+    }
+    thumbnail {
+      url
+    }
+    categories {
+      _id
+      name
+      slug
+    }
+  }
+}

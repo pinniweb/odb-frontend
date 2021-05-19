@@ -1,0 +1,21 @@
+.card {
+  &-post {
+    &:hover {
+      color: $white;
+      @include gradient-directional($primary, rgba($primary, .75), 135deg);
+      .card-post-date,
+      .card-post-link {
+        color: $white;
+      }
+    }
+    .card-post-date {
+      color: $primary;
+    }
+    .card-post-img {
+      height: 200px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

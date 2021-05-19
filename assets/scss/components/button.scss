@@ -1,0 +1,25 @@
+.btn {
+  &-outline-white {
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+  &-scroll-to-top {
+    opacity: 0;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: $zindex-fixed;
+    width: 3rem;
+    height: 3rem;
+    @include border-radius(1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    &.show {      
+      opacity: 1;
+    }
+  }
+}

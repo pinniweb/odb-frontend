@@ -1,0 +1,23 @@
+query FindPostQuery ($sort: String, $limit: Int, $start: Int, $where: JSON ) {
+  posts(sort: $sort, limit: $limit, start: $start, where: $where) {
+    _id
+    title
+    metaTitle
+    excerpt
+    metaDescription
+    slug
+    content
+    createdAt
+    image {
+      url              
+    }
+    thumbnail {
+      url
+    }
+    categories {
+      _id
+      name
+      slug
+    }
+  }
+}
