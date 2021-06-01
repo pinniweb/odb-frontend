@@ -1,72 +1,69 @@
 <template>
   <div class="content home flex-grow-1">
-    <section class="banner bg-white">
+    <section class="banner d-flex align-items-center">
       <b-container>
         <b-row>
           <b-col
             md="7"
           >
-            <h1 class="h2 text-primary mb-4">
-              L’office du bâtiment
-            </h1>
-            <p class="lead font-weight-medium">
-              Après 15 ans au service des entreprises du BTP, OFFICE DU BATIMENT est né en 2020 au carrefour du <strong>Tarn et Garonne</strong>, du <strong>Lot et Garonne</strong> et du <strong>Gers</strong> et se positionne comme un <strong>interlocuteur privilégié</strong> des professionnels du secteur.
-            </p>
-            <p class="lead font-weight-medium">
-              Qu’il s'agisse d’<strong>améliorer la visibilité et la notoriété</strong> de votre PME, de promouvoir de courageux créateurs ou d'épauler de vaillants artisans dans leur <strong>gestion au quotidien</strong>, nous mettons chaque jour toute notre énergie pour proposer l'accompagnement le plus adapté à chacun des profils qui nous sollicite.
-            </p>
-            <p class="lead font-weight-medium">
-              Parce que votre temps est précieux, nous sommes le point d'ancrage de votre <strong>communication</strong>, l'interlocuteur unique qui centralisera la mise en œuvre de toutes vos actions.
-            </p>
-            <b-button
-              variant="primary"
-              size="lg"
-              pill
-            >
-              Contactez-nous
-            </b-button>
+            <div class="caption">
+              <h1 class="h2 text-white mb-4">
+                L’office du bâtiment
+              </h1>
+              <p class="lead text-white font-weight-medium">
+                Après 15 ans au service des entreprises du BTP, OFFICE DU BATIMENT est né en 2020 au carrefour du <strong>Tarn et Garonne</strong>, du <strong>Lot et Garonne</strong> et du <strong>Gers</strong> et se positionne comme un <strong>interlocuteur privilégié</strong> des professionnels du secteur.
+              </p>
+              <p class="lead text-white font-weight-medium">
+                Qu’il s'agisse d’<strong>améliorer la visibilité et la notoriété</strong> de votre PME, de promouvoir de courageux créateurs ou d'épauler de vaillants artisans dans leur <strong>gestion au quotidien</strong>, nous mettons chaque jour toute notre énergie pour proposer l'accompagnement le plus adapté à chacun des profils qui nous sollicite.
+              </p>
+              <p class="lead text-white font-weight-medium">
+                Parce que votre temps est précieux, nous sommes le point d'ancrage de votre <strong>communication</strong>, l'interlocuteur unique qui centralisera la mise en œuvre de toutes vos actions.
+              </p>
+              <b-button
+                :to="{ name: 'contact' }"
+                variant="primary"
+                size="lg"
+                pill
+              >
+                Contactez-nous
+              </b-button>
+            </div>
           </b-col>
         </b-row>
       </b-container>
     </section>
     <section class="communication">
       <b-container>
-        <b-row>
-          <b-col>
-            <h2 class="h4 text-center text-primary mb-5">
+        <b-row class="justify-content-center mb-5">
+          <b-col md="6">
+            <h2 class="h4 text-center text-primary">
               Une agence de communication spécialisée dans le bâtiment
             </h2>
           </b-col>
         </b-row>
-        <b-row class="mb-5">
+        <b-row>
           <b-col
             md="6"
-            class="d-flex align-items-center justify-content-center"
+          >
+            <p class="lead font-weight-medium mb-0">
+              <strong>Création ou refonte de logo</strong>, création de site internet, <strong>réalisation et impression de plaquettes commerciales</strong>, flyers, cartes de visite... chacun de ces produits sera conçu sur mesure et correspondra à l'image que vous voudrez transmettre de votre entreprise.
+            </p>
+            <p class="lead font-weight-medium">
+              Réalisation de panneaux enseigne, <strong>panneaux publicitaires</strong> (« chantier réalisé », « permis de construire », fléchages chantier...), <strong>banderoles</strong> ou habillage de véhicules, votre visibilité sera la clé de votre notoriété et de votre pérennité.
+            </p>
+            <p class="lead font-weight-medium mb-5">
+              Vous souhaitez distribuer des cadeaux ou goodies à vos clients, des vêtements aux couleurs de la société à vos collaborateurs, nous personnalisons pour vous ces multiples outils de fidélisation.
+            </p>
+          </b-col>
+          <b-col
+            md="6"
+            class="d-flex flex-column align-items-center justify-content-center"
           >
             <img
-              class="bg-white p-2 rounded shadow"
-              src="/images/home/communication.png"
-              width="100%"
+              src="/images/home/website-builder.png"
+              alt="site internet"
+              class="mb-5"
             >
-          </b-col>
-          <b-col
-            md="6"
-          >
-            <div class="ml-4">
-              <p class="lead font-weight-medium text-justify">
-                <strong>Création ou refonte de logo</strong>, création de site internet, <strong>réalisation et impression de plaquettes commerciales</strong>, flyers, cartes de visite... chacun de ces produits sera conçu sur mesure et correspondra à l'image que vous voudrez transmettre de votre entreprise.
-              </p>
-              <p class="lead font-weight-medium text-justify">
-                Réalisation de panneaux enseigne, <strong>panneaux publicitaires</strong> (« chantier réalisé », « permis de construire », fléchages chantier...), <strong>banderoles</strong> ou habillage de véhicules, votre visibilité sera la clé de votre notoriété et de votre pérennité.
-              </p>
-              <p class="lead font-weight-medium mb-0 text-justify">
-                Vous souhaitez distribuer des cadeaux ou goodies à vos clients, des vêtements aux couleurs de la société à vos collaborateurs, nous personnalisons pour vous ces multiples outils de fidélisation.
-              </p>
-            </div>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col class="d-flex justify-content-center">
             <b-button
               variant="primary"
               size="lg"
@@ -78,74 +75,111 @@
         </b-row>
       </b-container>
     </section>
-    <section class="bg-white">
+    <section
+      v-if="productions.length"
+      class="bg-white"
+    >
+      <b-container>
+        <b-row class="justify-content-center mb-5">
+          <b-col md="6">
+            <h2 class="h4 text-center text-primary">
+              Nos réalisations
+            </h2>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col md="12">
+            <b-tabs
+              content-class="mt-5"
+              justified
+            >
+              <b-tab
+                v-for="(production, index) in productions"
+                :key="index"
+                :title="production.title"
+                :active="index === 0"
+                title-item-class="h6 mb-0"
+              >
+                <lightbox
+                  :modal-id="'lightbox-modal-' + index"
+                  :images="production.images"
+                />
+              </b-tab>
+            </b-tabs>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
+    <section class="compack">
       <b-container>
         <b-row>
           <b-col
             offset-md="2"
             md="8"
           >
-            <h2 class="h4 text-center mb-4">
-              Notre formule d’accompagnement aux créateurs d’entreprise : <span class="text-primary">Com'pack</span>
+            <h2 class="h3 text-white text-center mb-4">
+              Notre formule d'accompagnement aux créateurs d'entreprise: Com'pack
             </h2>
-            <p class="lead text-center font-weight-medium mb-5">
+            <p class="lead text-white text-center font-weight-medium mb-5">
               Parce que nous avons tous été un jour dans la peau du <strong>créateur</strong> et que la concurrence est rude, nous avons créé une offre spécialement destinée aux entrepreneurs qui se lancent dans l'aventure.
             </p>
             <b-card
               no-body
-              class="bg-light border-0 shadow pt-5 mb-5"
+              class="border-0 shadow py-5 mb-5"
             >
-              <div class="h4 mb-4 text-center">
+              <div class="h4 text-white text-center mb-5">
                 Offre spéciale créateurs
               </div>
-              <div class="h2 text-center text-primary">
-                299€ HT
-              </div>
-              <div class="text-center font-weight-medium font-italic mb-5">
-                Soit 358.80€ TTC
+              <div class="d-flex justify-content-center">
+                <div class="card-price mb-5">
+                  <div class="h2 text-center text-white">
+                    299€ HT
+                  </div>
+                  <div class="text-center text-white font-weight-medium font-italic">
+                    Soit 358.80€ TTC
+                  </div>
+                </div>
               </div>
               <b-list-group flush>
                 <b-list-group-item
-                  class="lead bg-light font-weight-medium"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   Votre identité visuelle
                 </b-list-group-item>
                 <b-list-group-item
-                  class="lead bg-light font-weight-medium"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad bg-light fa-asterisk text-primary mr-2" />
                   100 cartes de visite
                 </b-list-group-item>
                 <b-list-group-item
-                  class="lead bg-light font-weight-medium"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   1 tampon encreur 5 lignes
                 </b-list-group-item>
                 <b-list-group-item
-                  class="lead bg-light font-weight-medium"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   2 autocollants véhicule 50*30 cm
                 </b-list-group-item>
                 <b-list-group-item
-                  class="lead bg-light font-weight-medium"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   5 panneaux Akilux 60*40 cm
                 </b-list-group-item>
                 <b-list-group-item
-                  class="lead bg-light font-weight-medium"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   5 T-shirts imprimés coeur + dos
                 </b-list-group-item>
                 <b-list-group-item
-                  class="lead bg-light font-weight-medium"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   Votre page Google My Business
+                </b-list-group-item>
+                <b-list-group-item
+                  class="lead font-weight-medium text-center bg-primary rounded-0"
+                >
+                  Signature mail offerte
                 </b-list-group-item>
               </b-list-group>
             </b-card>
@@ -252,8 +286,7 @@
       </b-container>
     </section>
     <section
-      id="section-5"
-      class="section contact bg-dark"
+      class="contact bg-dark"
     >
       <b-container>
         <b-row class="justify-content-center">
@@ -284,12 +317,17 @@ import { actions } from '~/mixins/actions'
 export default {
   mixins: [actions],
   data: () => ({
-    posts: []
+    posts: [],
+    productions: [],
+    currentIndex: null
   }),
   async fetch () {
     this.posts = await this.findPosts({
       limit: 3,
       sort: 'createdAt:desc'
+    })
+    this.productions = await this.findProductions({
+      limit: 10
     })
   },
   head () {

@@ -2,34 +2,31 @@
   <main
     class="content gestion"
   >
-    <section class="banner bg-white">
+    <section class="banner d-flex align-items-center">
       <b-container>
         <b-row>
           <b-col
             md="6"
           >
-            <div class="caption mt-5">
-              <h1 class="h4 text-primary mb-4">
+            <div class="caption">
+              <h1 class="h3 text-white mb-5">
                 Office du Bâtiment,<br> votre partenaire gestion au quotidien
               </h1>
-              <p class="lead font-weight-medium">
+              <p class="lead text-white font-weight-medium">
                 Parce que votre temps est précieux, <span class="font-weight-bold">Office du bâtiment</span> vous propose d’externaliser votre gestion administrative et commerciale en vous permettant de vous concentrer sur votre cœur de métier.
               </p>
-              <p class="lead font-weight-bold">
+              <p class="lead text-white font-weight-bold mb-5">
                 Déléguez votre gestion, optimisez votre temps!
               </p>
+              <b-button
+                variant="primary"
+                pill
+                :to="{ name: 'contact' }"
+                size="lg"
+              >
+                Demandez une démonstration
+              </b-button>
             </div>
-          </b-col>
-          <b-col
-            offset-md="1"
-            md="5"
-            class="d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/banner.png"
-              alt=""
-              width="320px"
-            >
           </b-col>
         </b-row>
       </b-container>
@@ -64,7 +61,7 @@
               <b-card-body class="text-center">
                 <img
                   class="p-4 mb-3"
-                  src="/images/sync.png"
+                  src="/images/gestion/sync.png"
                   height="200px"
                   alt=""
                 >
@@ -90,7 +87,7 @@
               <b-card-body class="text-center">
                 <img
                   class="p-4 mb-3"
-                  src="/images/security.png"
+                  src="/images/gestion/security.png"
                   height="200px"
                   alt=""
                 >
@@ -116,7 +113,7 @@
               <b-card-body class="text-center">
                 <img
                   class="p-4 mb-3"
-                  src="/images/export.png"
+                  src="/images/gestion/transfer.png"
                   height="200px"
                   alt=""
                 >
@@ -142,7 +139,7 @@
               <b-card-body class="text-center">
                 <img
                   class="p-4 mb-3"
-                  src="/images/analysis.png"
+                  src="/images/gestion/analysis.png"
                   height="200px"
                   alt=""
                 >
@@ -160,7 +157,6 @@
       </b-container>
     </section>
     <section
-      id="section-2"
       class="section bg-white"
     >
       <b-container>
@@ -196,7 +192,6 @@
       </b-container>
     </section>
     <section
-      id="section-3"
       class="section"
     >
       <b-container>
@@ -275,7 +270,6 @@
       </b-container>
     </section>
     <section
-      id="section-4"
       class="section bg-white"
     >
       <b-container>
@@ -317,7 +311,6 @@
       </b-container>
     </section>
     <section
-      id="section-5"
       class="section contact bg-dark"
     >
       <b-container>

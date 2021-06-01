@@ -28,6 +28,14 @@
           <i class="fad fa-home-lg-alt" />
         </b-nav-item>
         <b-nav-item
+          :to="{ name: 'agence-communication-agen' }"
+          class="mx-2"
+          exact
+          exact-active-class="text-primary"
+        >
+          Communication
+        </b-nav-item>
+        <b-nav-item
           :to="{ name: 'pack-communication' }"
           class="mx-2"
           exact

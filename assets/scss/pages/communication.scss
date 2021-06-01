@@ -1,0 +1,70 @@
+.communication {
+  section {
+    padding: 5rem 0;
+    &.banner {
+      background-image: url(/images/communication/banner.jpg);
+      background-position: center 20%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      height: 750px;
+      &:before {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include gradient-y-three-colors(rgba($black, .65), rgba($black, .35), 50%, rgba($black, .65));
+      }
+    }
+  }
+  .map {
+    width: 500px;
+    height: 490px;
+    background-image: url(/images/map.png);
+    position: relative;
+    i {
+      position: absolute;
+      left: 40%;
+      bottom: 15%;
+      animation-duration: 1s;
+      animation-name: scale;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  }
+  .compack {
+    background-image: url(/images/home/compack.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &:before {
+      z-index: 0;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @include gradient-y-three-colors(rgba($black, .65), rgba($black, .35), 50%, rgba($black, .65));
+    }
+    .card-price {
+      background-color: $primary;
+      clip-path: circle(50% at 50% 50%);
+      height: 200px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .list-group-item {
+      background: none;
+      color: $white;
+      border: none;
+    }
+  }
+}

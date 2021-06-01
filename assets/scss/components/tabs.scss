@@ -1,0 +1,22 @@
+.nav-justified {
+  .nav-item {
+    // color: $body-color;
+    &:hover {
+      // background: none;
+      // color: $primary;
+    }
+  }
+}
+
+.nav-tabs {
+  // border: none;
+  .nav-link {
+    // border: none;
+    // color: $body-color;
+    &.active,
+    &:hover {
+      // background: none;
+      // color: $primary;
+    }
+  }
+}

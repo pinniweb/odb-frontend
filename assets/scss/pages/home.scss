@@ -3,9 +3,53 @@
     padding: 5rem 0;
     &.banner {
       background-image: url(/images/home/banner.jpg);
-      background-position: right bottom;
+      background-position: center;
       background-repeat: no-repeat;
-      background-size: 1250px;
+      background-size: cover;
+      position: relative;
+      height: 750px;
+      &:before {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include gradient-y-three-colors(rgba($black, .5), rgba($black, .25), 50%, rgba($black, .5));
+      }
+    }
+    &.compack {
+      background-image: url(/images/home/compack.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      &:before {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include gradient-y-three-colors(rgba($black, .65), rgba($black, .35), 50%, rgba($black, .65));
+      }
+      .card-price {
+        background-color: $primary;
+        clip-path: circle(50% at 50% 50%);
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .list-group-item {
+        background: none;
+        color: $white;
+        border: none;
+      }
     }
     &.gestion {
       background-image: url(/images/home/gestion.png);

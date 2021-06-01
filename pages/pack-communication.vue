@@ -9,22 +9,28 @@
             md="6"
             class="d-flex flex-column justify-content-center"
           >
-            <div class="h4 mb-4">
+            <div class="h4 mb-4 text-white">
               Personne ne peut le nier, un jour il a bien fallu commencer&nbsp;!
             </div>
-            <p class="lead font-weight-medium">
+            <p class="lead font-weight-medium text-white">
               Et lorsqu’on se lance, on n'est pas ou peu connu, il faut donc se donner toutes les chances de se faire remarquer.
             </p>
-            <p class="lead font-weight-medium">
+            <p class="lead font-weight-medium text-white">
               A l'<strong>OFFICE DU BATIMENT</strong>, nous sommes aussi conscients que les budgets au démarrage ne sont pas extensibles, c'est pour cela que nous avons créé <strong>COM'PACK&nbsp;!</strong>
             </p>
-            <p class="lead font-weight-medium">
+            <p class="lead font-weight-medium text-white">
               Le kit de communication conçu pour les créateurs de micro et TPE à un <strong>rapport qualité/prix IMBATTABLE&nbsp;!</strong>
             </p>
-            <p class="lead font-weight-medium mb-0">
+            <p class="lead font-weight-medium text-white mb-0">
               Mieux, nous nous déplaçons vous rencontrez dans un rayon de 100 kms autour de <strong>Valence d'Agen, dans les départements du Tarn et Garonne (Montauban, Moissac, Castelsarrasin, Montech), Lot et Garonne (Agen, Villeneuve sur Lot, Marmande, Nérac, Tonneins) et Gers (Auch, fleurance, Lectoure, Condom, Eauze)</strong>
             </p>
           </b-col>
+        </b-row>
+      </b-container>
+    </section>
+    <section>
+      <b-container>
+        <b-row class="justify-content-center">
           <b-col
             md="6"
           >

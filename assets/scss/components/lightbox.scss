@@ -1,0 +1,16 @@
+.lightbox {
+  &-thumbnail {
+    height: 260px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &-image {
+    height: 80vh;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

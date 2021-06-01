@@ -1,0 +1,10 @@
+query FindProductionQuery ($sort: String, $limit: Int, $start: Int, $where: JSON ) {
+  productions(sort: $sort, limit: $limit, start: $start, where: $where) {
+    _id
+    title
+    description
+    images {
+      url              
+    }
+  }
+}

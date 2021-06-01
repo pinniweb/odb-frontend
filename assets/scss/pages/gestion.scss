@@ -1,6 +1,24 @@
 .gestion {
   section {
     padding: 5rem 0;
+    &.banner {
+      background-image: url(/images/gestion/banner.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      height: 750px;
+      &:before {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include gradient-y-three-colors(rgba($black, .65), rgba($black, .35), 50%, rgba($black, .65));
+      }
+    }
     &.contact {
       padding-bottom: 24rem;
       background-image: url(/images/contact.png);
