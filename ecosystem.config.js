@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'odb',
+      name: 'odb-www',
       script: 'yarn',
       args: 'start',
       env: {
