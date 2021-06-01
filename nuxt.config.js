@@ -38,7 +38,7 @@ export default {
     }]
   ],
   server: {
-    port: process.env.NODE_ENV === 'production' ? 3003 : 3000,
+    port: process.env.NODE_ENV === 'production' ? 3000 : 3000,
     host: process.env.NODE_ENV === 'production' ? 'officedubatiment.com' : 'localhost'
   },
   modules: [
