@@ -4,6 +4,7 @@ module.exports = {
       name: 'odb-www',
       script: 'yarn',
       args: 'start',
+      interpreter: '/bin/bash',
       env: {
         NODE_ENV: 'production',
         DATABASE_HOST: '127.0.0.1',
