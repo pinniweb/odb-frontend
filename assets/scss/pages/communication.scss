@@ -26,27 +26,7 @@
         bottom: 0;
         @include gradient-y-three-colors(rgba($black, .65), rgba($black, .35), 50%, rgba($black, .65));
       }
-    }
-    &.map {
-      width: 500px;
-      height: 490px;
-      background-image: url(/images/map.png);
-      background-size: 100%;
-      position: relative;
-      @include media-breakpoint-down(md) {
-        width: 250px;
-        height: 245px;
-      }
-      i {
-        position: absolute;
-        left: 40%;
-        bottom: 15%;
-        animation-duration: 1s;
-        animation-name: scale;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-      }
-    }
+    }    
     &.compack {
       background-image: url(/images/home/compack.jpg);
       background-position: center;
@@ -96,6 +76,26 @@
         background: none;
         padding-bottom: map-get($spacers, 5);
       }
+    }
+  }
+  .map {
+    width: 500px;
+    height: 490px;
+    background-image: url(/images/map.png);
+    background-size: 100%;
+    position: relative;
+    @include media-breakpoint-down(md) {
+      width: 250px;
+      height: 245px;
+    }
+    i {
+      position: absolute;
+      left: 40%;
+      bottom: 15%;
+      animation-duration: 1s;
+      animation-name: scale;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
     }
   }
 }
