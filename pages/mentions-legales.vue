@@ -21,8 +21,8 @@
           <span class="font-weight-bold">Siège social:</span> 33 Allée du 4 Septembre, 82400 Valence d'Agen
         </p>
         <p>Le directeur de la publication du site web officedubatiment.com est OFFICE DU BATIMENT.</p>
-        <p>Le site officedubatiment.com est hébergé par <a target="_blank" class="text-primary" href="https://www.gandi.net">Gandi</a></p>
-        <p>Développement du site par <a target="_blank" class="text-primary" href="https://www.manufacturegenerale.com/">La Manufacture générale</a></p>
+        <p>Le site officedubatiment.com est hébergé par <a target="_blank" class="text-primary" href="https://www.digitalocean.com/">Digital Ocean</a></p>
+        <p>Développement du site par Pinniweb</p>
         <p>Les mentions légales ont étés générées par générateur de mentions legales</p>
         <h4 class="h5 text-primary">
           2.Présentation et principe

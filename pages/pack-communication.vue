@@ -359,9 +359,7 @@
                   v-model="form.creationDate"
                   variant="primary"
                   nav-button-variant="primary"
-                  dark
                   v-bind="labels[locale] || {}"
-                  :readonly="true"
                   :locale="locale"
                   :start-weekday="weekday"
                   size="lg"
@@ -620,7 +618,7 @@ export default {
   },
   head () {
     return {
-      title: 'Pack communication | Odb',
+      title: 'Pack communication | Office du Bâtiment',
       meta: [
         {
           hid: 'description',

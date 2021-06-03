@@ -1,0 +1,15 @@
+.b-calendar {
+  .b-calendar-header {
+    .form-control {
+      color: $body-color;
+    }
+  }
+  .b-calendar-grid-caption {
+    color: $body-color;
+  }
+  .b-calendar-grid-weekdays {
+    small {
+      color: $body-color;
+    }
+  }
+}

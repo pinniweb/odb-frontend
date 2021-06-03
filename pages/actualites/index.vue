@@ -13,6 +13,7 @@
           v-for="(post, index) in posts"
           :key="index"
           md="4"
+          class="mb-4"
         >
           <post-card
             :post="post"
@@ -28,14 +29,14 @@ import { actions } from '~/mixins/actions'
 
 export default {
   mixins: [actions],
+  data: () => ({
+    posts: []
+  }),
   async fetch () {
     this.posts = await this.findPosts({
       sort: 'createdAt:desc'
     })
   },
-  data: () => ({
-    posts: []
-  }),
   head () {
     return {
       title: 'Office du Bâtiment: les actus',

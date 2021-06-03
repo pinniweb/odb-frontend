@@ -370,7 +370,7 @@ export default {
   }),
   head () {
     return {
-      title: 'Office du Bâtiment: Agence de communication',
+      title: 'Agence de communication | Office du Bâtiment',
       meta: [
         {
           hid: 'description',

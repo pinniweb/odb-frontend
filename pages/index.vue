@@ -67,6 +67,7 @@
               class="mb-5 d-none d-md-inline"
             >
             <b-button
+              :to="{ name: 'agence-communication-agen' }"
               variant="primary"
               size="lg"
               pill
@@ -262,7 +263,7 @@
     >
       <b-container>
         <b-row class="mb-4">
-          <b-col class="d-flex align-items-center justify-content-center justify-md-content-between">
+          <b-col class="d-flex align-items-center justify-content-center justify-content-md-between">
             <h2 class="h4 mb-0">
               Les actualités
             </h2>
@@ -348,7 +349,7 @@ export default {
   },
   head () {
     return {
-      title: 'Office du Bâtiment: gestion administrative et commerciale des entreprises du bâtiment',
+      title: 'Agence de communication des entreprises du bâtiment | Office du Bâtiment',
       meta: [
         {
           hid: 'description',

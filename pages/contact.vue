@@ -226,12 +226,12 @@ export default {
   },
   head () {
     return {
-      title: 'Contactez-nous | Le Bol',
+      title: 'Contactez-nous | Office du Bâtiment',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Le Bol est un projet qui regroupe des cours de poterie en ligne, un blog sur la céramique et une activité de location de matériel de poterie.'
+          content: 'Spécialisée dans l\'accompagnement des professionnels du BTP, OFFICE DU BATIMENT est une agence de communication de proximité située au cœur du Sud Ouest, entre Agen, Montauban et Auch.'
         }
       ]
     }

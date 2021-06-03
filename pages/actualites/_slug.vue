@@ -7,6 +7,7 @@
         <b-col
           v-if="post"
           md="8"
+          class="mb-5 mb-md-0"
         >
           <img
             :src="post.image.url"
@@ -89,6 +90,12 @@ export default {
     }
   },
   mixins: [actions],
+  data: () => ({
+    post: null,
+    relatedPosts: [],
+    metaTitle: 'Meta title',
+    metaDescription: 'Meta description'
+  }),
   async fetch () {
     const posts = await this.findPosts({
       where: {
@@ -106,20 +113,6 @@ export default {
       sort: 'createdAt:desc'
     })
   },
-  data: () => ({
-    post: null,
-    relatedPosts: [],
-    metaTitle: 'Meta title',
-    metaDescription: 'Meta description'
-  }),
-  methods: {
-    parseHtml (value) {
-      const converter = new showdown.Converter()
-      converter.setOption('noHeaderId', true)
-      converter.setOption('parseImgDimensions', true)
-      return converter.makeHtml(value)
-    }
-  },
   head () {
     return {
       title: this.metaTitle,
@@ -130,6 +123,14 @@ export default {
           content: this.metaDescription
         }
       ]
+    }
+  },
+  methods: {
+    parseHtml (value) {
+      const converter = new showdown.Converter()
+      converter.setOption('noHeaderId', true)
+      converter.setOption('parseImgDimensions', true)
+      return converter.makeHtml(value)
     }
   }
 }

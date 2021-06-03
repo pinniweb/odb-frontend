@@ -348,7 +348,7 @@ export default {
   }),
   head () {
     return {
-      title: 'Office du Bâtiment: gestion administrative et commerciale des entreprises du bâtiment',
+      title: 'Gestion administrative et commerciale des entreprises du bâtiment | Office du Bâtiment',
       meta: [
         {
           hid: 'description',
