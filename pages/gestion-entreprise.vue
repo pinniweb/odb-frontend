@@ -8,7 +8,7 @@
           <b-col
             md="6"
           >
-            <div class="caption">
+            <div class="caption ml-3 ml-md-0">
               <h1 class="h3 text-white mb-5">
                 Office du Bâtiment,<br> votre partenaire gestion au quotidien
               </h1>
@@ -168,10 +168,10 @@
             lg="4"
             class="d-flex flex-column align-items-center align-items-lg-start justify-content-center"
           >
-            <h2 class="title text-primary h4 mb-3">
+            <h2 class="title text-center text-md-left text-primary h4 mb-3">
               Un support digital à la portée de tous
             </h2>
-            <p class="lead font-weight-medium">
+            <p class="lead font-weight-medium text-center text-md-left mx-3 mx-md-0">
               Notre expérience auprès des professionnels du bâtiment nous a amené à développer un environnement à la fois convivial et structuré permettant le stockage des données essentielles au fonctionnement de votre entreprise.
             </p>
           </b-col>
@@ -185,7 +185,7 @@
             <img
               src="/images/laptop.png"
               alt=""
-              width="400px"
+              width="300px"
             >
           </b-col>
         </b-row>
@@ -204,7 +204,7 @@
             <h2 class="text-primary text-center h4">
               Une collaboration évolutive
             </h2>
-            <p class="lead text-center font-weight-medium">
+            <p class="lead text-center font-weight-medium mx-3 mx-md-0">
               Notre objectif est d’être au plus proche de vous afin de garantir un service optimal sur le plan organisationnel mais aussi de pouvoir améliorer vos outils de communication.
             </p>
           </b-col>
@@ -216,17 +216,18 @@
           >
             <b-card
               no-body
-              class="pt-0 px-1 pb-1 mb-2 mb-md-3 shadow border-0 mx-5"
+              class="pt-0 px-1 pb-1 mb-2 mb-md-3 shadow border-0 mx-0 mx-md-5"
             >
-              <b-card-body class="text-left">
+              <b-card-body class="text-center text-md-left">
                 <i
                   class="mb-3 fad fa-edit fa-2x text-primary"
                 />
                 <b-card-title
                   title="Suivi et encaissement"
                   title-tag="h5"
+                  class="text-center text-md-left"
                 />
-                <b-card-text class="font-weight-medium mb-0">
+                <b-card-text class="font-weight-medium mb-0 text-center text-md-left">
                   De la relance de vos devis à l’encaissement, le suivi commercial de vos chantiers est assuré.
                 </b-card-text>
               </b-card-body>
@@ -235,32 +236,34 @@
               no-body
               class="pt-0 px-1 pb-1 mb-2 mb-md-3 shadow border-0"
             >
-              <b-card-body class="text-left">
+              <b-card-body class="text-center text-md-left">
                 <i
                   class="mb-3 fad fa-comments fa-2x text-warning"
                 />
                 <b-card-title
                   title="Proximité et réactivité"
                   title-tag="h5"
+                  class="text-center text-md-left"
                 />
-                <b-card-text class="font-weight-medium mb-0">
+                <b-card-text class="font-weight-medium mb-0 text-center text-md-left">
                   Une équipe commerciale de terrain disponible ainsi qu’un chat en ligne sur votre espace.
                 </b-card-text>
               </b-card-body>
             </b-card>
             <b-card
               no-body
-              class="pt-0 px-1 pb-1 shadow border-0 mx-5"
+              class="pt-0 px-1 pb-1 shadow border-0 mx-0 mx-md-5"
             >
-              <b-card-body class="text-left">
+              <b-card-body class="text-center text-md-left">
                 <i
                   class="mb-3 fad fa-chart-area fa-2x text-success"
                 />
                 <b-card-title
                   title="Analyse et conseil"
                   title-tag="h5"
+                  class="text-center text-md-left"
                 />
-                <b-card-text class="font-weight-medium mb-0">
+                <b-card-text class="font-weight-medium mb-0 text-center text-md-left">
                   L’expertise de nos consultants à votre service.
                 </b-card-text>
               </b-card-body>
@@ -279,13 +282,13 @@
             class="d-flex flex-column align-items-start justify-content-center"
           >
             <div class="description">
-              <h2 class="title text-primary h4 mb-3">
+              <h2 class="title text-center text-md-left text-primary h4 mb-3">
                 Des outils de communication sur mesure
               </h2>
-              <p class="lead font-weight-medium">
+              <p class="lead font-weight-medium text-center text-md-left mx-3 mx-md-0">
                 Parce qu’une activité pérenne passe aussi par la visibilité de son entreprise, un partenariat a été conclu avec une agence de communication locale.
               </p>
-              <p class="lead font-weight-medium">
+              <p class="lead font-weight-medium text-center text-md-left mx-3 mx-md-0">
                 <strong>Office du Bâtiment</strong> peut ainsi vous proposer diverses prestations comme la conception de site internet, le référencement web, la création graphique (logo par exemple), l’impression sur tous supports, cartes de visite, flyers...
               </p>
               <b-button
@@ -300,7 +303,7 @@
           </b-col>
           <b-col
             md="6"
-            class="d-flex align-items-center justify-content-center"
+            class="d-none d-md-flex align-items-center justify-content-center"
           >
             <img
               src="/images/agency.png"

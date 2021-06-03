@@ -6,7 +6,7 @@
           <b-col
             md="7"
           >
-            <div class="caption">
+            <div class="caption ml-3 ml-md-0">
               <h1 class="h2 text-white mb-4">
                 L’office du bâtiment
               </h1>
@@ -34,9 +34,9 @@
     </section>
     <section class="communication">
       <b-container>
-        <b-row class="justify-content-center mb-5">
+        <b-row class="justify-content-center mb-4 mb-md-5">
           <b-col md="6">
-            <h2 class="h4 text-center text-primary">
+            <h2 class="h4 text-center text-primary mx-3 mx-md-0">
               Une agence de communication spécialisée dans le bâtiment
             </h2>
           </b-col>
@@ -45,24 +45,26 @@
           <b-col
             md="6"
           >
-            <p class="lead font-weight-medium mb-0">
+            <p class="lead text-center text-md-left font-weight-medium mx-3 mx-md-0">
               <strong>Création ou refonte de logo</strong>, création de site internet, <strong>réalisation et impression de plaquettes commerciales</strong>, flyers, cartes de visite... chacun de ces produits sera conçu sur mesure et correspondra à l'image que vous voudrez transmettre de votre entreprise.
             </p>
-            <p class="lead font-weight-medium">
+            <p class="lead text-center text-md-left font-weight-medium mx-3 mx-md-0">
               Réalisation de panneaux enseigne, <strong>panneaux publicitaires</strong> (« chantier réalisé », « permis de construire », fléchages chantier...), <strong>banderoles</strong> ou habillage de véhicules, votre visibilité sera la clé de votre notoriété et de votre pérennité.
             </p>
-            <p class="lead font-weight-medium mb-5">
+            <p class="lead text-center text-md-left font-weight-medium mb-4 mb-md-0 mx-3 mx-md-0">
               Vous souhaitez distribuer des cadeaux ou goodies à vos clients, des vêtements aux couleurs de la société à vos collaborateurs, nous personnalisons pour vous ces multiples outils de fidélisation.
             </p>
           </b-col>
           <b-col
-            md="6"
+            md="5"
+            offset-md="1"
             class="d-flex flex-column align-items-center justify-content-center"
           >
             <img
               src="/images/home/website-builder.png"
+              width="100%"
               alt="site internet"
-              class="mb-5"
+              class="mb-5 d-none d-md-inline"
             >
             <b-button
               variant="primary"
@@ -91,7 +93,6 @@
           <b-col md="12">
             <b-tabs
               content-class="mt-5"
-              justified
             >
               <b-tab
                 v-for="(production, index) in productions"
@@ -202,26 +203,28 @@
           <b-col
             md="6"
           >
-            <h2 class="h4 text-primary mb-4">
+            <h2 class="h4 text-primary text-center text-md-left mb-4">
               Gestion entreprise
             </h2>
-            <p class="lead font-weight-medium">
+            <p class="lead font-weight-medium text-center text-md-left">
               Visiter les clients, rédiger les devis, planifier les appros, effectuer le chantier, facturer, se faire payer... <strong>Gérer une petite entreprise</strong> du bâtiment est loin d’être de tout repos.
             </p>
-            <p class="lead font-weight-medium">
+            <p class="lead font-weight-medium text-center text-md-left">
               Nous avons donc voulu dédier une partie de nos ressources à accompagner ces artisans à souffler une fois la journée de chantier terminée.
             </p>
-            <p class="lead font-weight-medium mb-4">
+            <p class="lead font-weight-medium mb-4 text-center text-md-left">
               Une méthode ainsi qu’une application ont été développées afin de soulager nos clients de leurs <strong>impératifs administratifs</strong> tout en les aidant à piloter au plus près leur trésorerie.
             </p>
-            <b-button
-              variant="primary"
-              size="lg"
-              pill
-              :to="{ name: 'gestion-entreprise' }"
-            >
-              Plus de détails
-            </b-button>
+            <div class="d-flex justify-content-center justify-md-start">
+              <b-button
+                variant="primary"
+                size="lg"
+                pill
+                :to="{ name: 'gestion-entreprise' }"
+              >
+                Plus de détails
+              </b-button>
+            </div>
           </b-col>
         </b-row>
       </b-container>
@@ -231,6 +234,7 @@
         <b-row>
           <b-col
             md="6"
+            class="d-flex justify-content-center mb-4 mb-md-0"
           >
             <div
               class="map"
@@ -243,10 +247,10 @@
             md="5"
             class="d-flex flex-column justify-content-center"
           >
-            <h2 class="h4 mb-4 text-primary">
+            <h2 class="h4 mb-4 text-primary text-center text-md-left">
               Notre rayon d'action
             </h2>
-            <p class="lead font-weight-medium">
+            <p class="lead font-weight-medium text-center text-md-left mx-3 mx-md-0">
               Nos bureaux installés à <strong>Valence d'Agen (Tarn et Garonne)</strong> nous permettent de rayonner sur <strong>Montauban, Moissac, Castelsarrasin, Montech</strong> et dans les départements limitrophes comme le <strong>Lot et Garonne</strong> dans les villes d'<strong>Agen, Villeneuve sur Lot, Marmande, Nérac, Tonneins</strong> ainsi que dans le <strong>Gers</strong> à <strong>Auch, Lectoure, Fleurance, Condom, Eauze.</strong>
             </p>
           </b-col>
@@ -258,7 +262,7 @@
     >
       <b-container>
         <b-row class="mb-4">
-          <b-col class="d-flex align-items-center justify-content-between">
+          <b-col class="d-flex align-items-center justify-content-center justify-md-content-between">
             <h2 class="h4 mb-0">
               Les actualités
             </h2>
@@ -267,6 +271,7 @@
               pill
               to="/actualites"
               size="lg"
+              class="d-none d-md-inline-block"
             >
               Afficher plus d'actualités
             </b-button>
@@ -277,12 +282,23 @@
             v-for="(post, index) in posts"
             :key="index"
             md="4"
+            class="mb-4"
           >
             <post-card
               :post="post"
             />
           </b-col>
         </b-row>
+        <b-button
+          variant="primary"
+          pill
+          to="/actualites"
+          size="lg"
+          block
+          class="d-inline-block d-md-none"
+        >
+          Afficher plus d'actualités
+        </b-button>
       </b-container>
     </section>
     <section

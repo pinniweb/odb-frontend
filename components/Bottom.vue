@@ -3,7 +3,7 @@
     <b-container class="py-5">
       <b-row class="mb-5">
         <b-col
-          md="3"
+          md="4"
           class="mb-5 mb-md-0 text-center text-md-left"
         >
           <img
@@ -37,48 +37,7 @@
           </div>
         </b-col>
         <b-col
-          md="3"
-        >
-          <div class="h6 mb-4 text-white text-uppercase text-center text-md-left">
-            Explorer
-          </div>
-          <ul class="list-unstyled">
-            <li class="text-center text-md-left">
-              <a
-                href="#"
-                @click.prevent="scrollTo('#section-1')"
-              >
-                Solutions digitales
-              </a>
-            </li>
-            <li class="text-center text-md-left">
-              <a
-                href="#"
-                @click.prevent="scrollTo('#section-2')"
-              >
-                Plateforme
-              </a>
-            </li>
-            <li class="text-center text-md-left">
-              <a
-                href="#"
-                @click.prevent="scrollTo('#section-3')"
-              >
-                Services personnalisés
-              </a>
-            </li>
-            <li class="text-center text-md-left">
-              <a
-                href="#"
-                @click.prevent="scrollTo('#section-4')"
-              >
-                Outils marketing
-              </a>
-            </li>
-          </ul>
-        </b-col>
-        <b-col
-          md="3"
+          md="4"
         >
           <div class="h6 mb-4 text-white text-uppercase text-center text-md-left">
             Legal
@@ -101,7 +60,7 @@
           </ul>
         </b-col>
         <b-col
-          md="3"
+          md="4"
         >
           <div class="h6 mb-4 text-white text-uppercase text-center text-md-left">
             Nous suivre

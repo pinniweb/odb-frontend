@@ -1,6 +1,9 @@
 .gestion {
   section {
     padding: 5rem 0;
+    @include media-breakpoint-down(md) {
+      padding: map-get($spacers, 5) 0;
+    }
     &.banner {
       background-image: url(/images/gestion/banner.jpg);
       background-position: center;
@@ -8,6 +11,11 @@
       background-size: cover;
       position: relative;
       height: 750px;
+      @include media-breakpoint-down(md) {
+        background-image: url(/images/gestion/banner-mobile.jpg);
+        min-height: calc(100vh - #{$header-height});
+        padding: 5rem 0;
+      }
       &:before {
         z-index: 0;
         content: '';
@@ -26,6 +34,10 @@
       background-size: 650px;
       background-repeat: no-repeat;
       border-top: 4px solid $primary;
+      @include media-breakpoint-down(md) {
+        background: none;
+        padding-bottom: map-get($spacers, 5);
+      }
     }
   }
 }

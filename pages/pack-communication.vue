@@ -9,94 +9,109 @@
             md="6"
             class="d-flex flex-column justify-content-center"
           >
-            <div class="h4 mb-4 text-white">
-              Personne ne peut le nier, un jour il a bien fallu commencer&nbsp;!
+            <div class="ml-3 ml-md-0">
+              <div class="h4 mb-4 text-white">
+                Personne ne peut le nier, un jour il a bien fallu commencer&nbsp;!
+              </div>
+              <p class="lead font-weight-medium text-white">
+                Et lorsqu’on se lance, on n'est pas ou peu connu, il faut donc se donner toutes les chances de se faire remarquer.
+              </p>
+              <p class="lead font-weight-medium text-white">
+                A l'<strong>OFFICE DU BATIMENT</strong>, nous sommes aussi conscients que les budgets au démarrage ne sont pas extensibles, c'est pour cela que nous avons créé <strong>COM'PACK&nbsp;!</strong>
+              </p>
+              <p class="lead font-weight-medium text-white">
+                Le kit de communication conçu pour les créateurs de micro et TPE à un <strong>rapport qualité/prix IMBATTABLE&nbsp;!</strong>
+              </p>
+              <p class="lead font-weight-medium text-white mb-0">
+                Mieux, nous nous déplaçons vous rencontrez dans un rayon de 100 kms autour de <strong>Valence d'Agen, dans les départements du Tarn et Garonne (Montauban, Moissac, Castelsarrasin, Montech), Lot et Garonne (Agen, Villeneuve sur Lot, Marmande, Nérac, Tonneins) et Gers (Auch, fleurance, Lectoure, Condom, Eauze)</strong>
+              </p>
             </div>
-            <p class="lead font-weight-medium text-white">
-              Et lorsqu’on se lance, on n'est pas ou peu connu, il faut donc se donner toutes les chances de se faire remarquer.
-            </p>
-            <p class="lead font-weight-medium text-white">
-              A l'<strong>OFFICE DU BATIMENT</strong>, nous sommes aussi conscients que les budgets au démarrage ne sont pas extensibles, c'est pour cela que nous avons créé <strong>COM'PACK&nbsp;!</strong>
-            </p>
-            <p class="lead font-weight-medium text-white">
-              Le kit de communication conçu pour les créateurs de micro et TPE à un <strong>rapport qualité/prix IMBATTABLE&nbsp;!</strong>
-            </p>
-            <p class="lead font-weight-medium text-white mb-0">
-              Mieux, nous nous déplaçons vous rencontrez dans un rayon de 100 kms autour de <strong>Valence d'Agen, dans les départements du Tarn et Garonne (Montauban, Moissac, Castelsarrasin, Montech), Lot et Garonne (Agen, Villeneuve sur Lot, Marmande, Nérac, Tonneins) et Gers (Auch, fleurance, Lectoure, Condom, Eauze)</strong>
-            </p>
           </b-col>
         </b-row>
       </b-container>
     </section>
-    <section>
+    <section class="pack">
       <b-container>
-        <b-row class="justify-content-center">
+        <b-row>
           <b-col
-            md="6"
+            offset-md="2"
+            md="8"
           >
+            <h2 class="h3 text-white text-center mb-4">
+              Notre formule d'accompagnement aux créateurs d'entreprise: Com'pack
+            </h2>
+            <p class="lead text-white text-center font-weight-medium mb-5">
+              Parce que nous avons tous été un jour dans la peau du <strong>créateur</strong> et que la concurrence est rude, nous avons créé une offre spécialement destinée aux entrepreneurs qui se lancent dans l'aventure.
+            </p>
             <b-card
               no-body
-              class="border-0 shadow h-100 py-5"
+              class="border-0 shadow py-5 mb-5"
             >
-              <div class="h4 mb-4 text-white text-center">
+              <div class="h4 text-white text-center mb-5">
                 Offre spéciale créateurs
               </div>
-              <div class="h2 text-center text-primary">
-                299€ HT
-              </div>
-              <div class="text-center text-white font-weight-medium font-italic mb-5">
-                Soit 358.80€ TTC
+              <div class="d-flex justify-content-center">
+                <div class="card-price mb-5">
+                  <div class="h2 text-center text-white">
+                    299€ HT
+                  </div>
+                  <div class="text-center text-white font-weight-medium font-italic">
+                    Soit 358.80€ TTC
+                  </div>
+                </div>
               </div>
               <b-list-group flush>
                 <b-list-group-item
-                  class="font-weight-medium bg-transparent text-white lead"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   Votre identité visuelle
                 </b-list-group-item>
                 <b-list-group-item
-                  class="font-weight-medium bg-transparent text-white lead"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   100 cartes de visite
                 </b-list-group-item>
                 <b-list-group-item
-                  class="font-weight-medium bg-transparent text-white lead"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   1 tampon encreur 5 lignes
                 </b-list-group-item>
                 <b-list-group-item
-                  class="font-weight-medium bg-transparent text-white lead"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   2 autocollants véhicule 50*30 cm
                 </b-list-group-item>
                 <b-list-group-item
-                  class="font-weight-medium bg-transparent text-white lead"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   5 panneaux Akilux 60*40 cm
                 </b-list-group-item>
                 <b-list-group-item
-                  class="font-weight-medium bg-transparent text-white lead"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   5 T-shirts imprimés coeur + dos
                 </b-list-group-item>
                 <b-list-group-item
-                  class="font-weight-medium bg-transparent text-white lead"
+                  class="lead font-weight-medium text-center"
                 >
-                  <i class="fad fa-asterisk text-primary mr-2" />
                   Votre page Google My Business
                 </b-list-group-item>
                 <b-list-group-item
-                  class="font-weight-medium bg-transparent text-white lead"
+                  class="lead font-weight-medium text-center bg-primary rounded-0"
                 >
                   Signature mail offerte
                 </b-list-group-item>
               </b-list-group>
             </b-card>
+            <b-button
+              variant="primary"
+              size="lg"
+              pill
+              block
+              :to="{ name: 'pack-communication' }"
+            >
+              Commandez votre pack
+            </b-button>
           </b-col>
         </b-row>
       </b-container>

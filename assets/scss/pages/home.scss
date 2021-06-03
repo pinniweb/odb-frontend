@@ -1,13 +1,21 @@
 .home {
   section {
     padding: 5rem 0;
-    &.banner {
+    @include media-breakpoint-down(md) {
+      padding: map-get($spacers, 5) 0;
+    }
+    &.banner {      
       background-image: url(/images/home/banner.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
       height: 750px;
+      @include media-breakpoint-down(md) {
+        background-image: url(/images/home/banner-mobile.jpg);
+        min-height: calc(100vh - #{$header-height});
+        padding: 5rem 0;
+      }
       &:before {
         z-index: 0;
         content: '';
@@ -17,6 +25,9 @@
         right: 0;
         bottom: 0;
         @include gradient-y-three-colors(rgba($black, .5), rgba($black, .25), 50%, rgba($black, .5));
+        @include media-breakpoint-down(md) {
+          @include gradient-y-three-colors(rgba($black, .75), rgba($black, .35), 50%, rgba($black, .75));
+        }
       }
     }
     &.compack {
@@ -25,6 +36,9 @@
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
+      @include media-breakpoint-down(md) {
+        background-image: url(/images/home/compack-mobile.jpg);
+      }
       &:before {
         z-index: 0;
         content: '';
@@ -33,7 +47,10 @@
         left: 0;
         right: 0;
         bottom: 0;
-        @include gradient-y-three-colors(rgba($black, .65), rgba($black, .35), 50%, rgba($black, .65));
+        @include gradient-y-three-colors(rgba($black, .65), rgba($black, .35), 50%, rgba($black, .65));        
+      }
+      .card {
+        background-color: rgba($black, .75);
       }
       .card-price {
         background-color: $primary;
@@ -56,6 +73,9 @@
       background-position: 70% bottom;
       background-repeat: no-repeat;
       background-size: 512px;
+      @include media-breakpoint-down(md) {
+        background: none;
+      }
     }
     &.contact {
       padding-bottom: 24rem;
@@ -64,13 +84,22 @@
       background-size: 650px;
       background-repeat: no-repeat;
       border-top: 4px solid $primary;
+      @include media-breakpoint-down(md) {
+        background: none;
+        padding-bottom: map-get($spacers, 5);
+      }
     }
   }
   .map {
     width: 500px;
     height: 490px;
     background-image: url(/images/map.png);
+    background-size: 100%;
     position: relative;
+    @include media-breakpoint-down(md) {
+      width: 250px;
+      height: 245px;
+    }
     i {
       position: absolute;
       left: 40%;

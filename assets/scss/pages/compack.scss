@@ -1,11 +1,20 @@
 .compack {
   section {
     padding: 5rem 0;
+    @include media-breakpoint-down(md) {
+      padding: map-get($spacers, 5) 0;
+    }
     &.banner {
       background-image: url(/images/compack/banner.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      height: 750px;
+      @include media-breakpoint-down(md) {
+        background-image: url(/images/compack/banner-mobile.jpg);
+        min-height: calc(100vh - #{$header-height});
+        padding: 5rem 0;
+      }
       &:before {
         z-index: 0;
         content: '';
@@ -24,10 +33,49 @@
       background-size: 650px;
       background-repeat: no-repeat;
       border-top: 4px solid $primary;
+      @include media-breakpoint-down(md) {
+        background: none;
+        padding-bottom: map-get($spacers, 5);
+      }
     }
-  }
-  .card {
-    background: rgba($black, .75);
+    &.pack {
+      background-image: url(/images/home/compack.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      @include media-breakpoint-down(md) {
+        background-image: url(/images/home/compack-mobile.jpg);
+      }
+      &:before {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include gradient-y-three-colors(rgba($black, .65), rgba($black, .35), 50%, rgba($black, .65));        
+      }
+      .card {
+        background-color: rgba($black, .75);
+      }
+      .card-price {
+        background-color: $primary;
+        clip-path: circle(50% at 50% 50%);
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .list-group-item {
+        background: none;
+        color: $white;
+        border: none;
+      }
+    }
   }
   form {
     .title {
