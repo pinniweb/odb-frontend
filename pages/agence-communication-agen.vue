@@ -9,29 +9,59 @@
             md="6"
           >
             <div class="caption ml-3 ml-md-3">
-              <h1 class="h2 text-white mb-4">
-                Agence de communication pour le bâtiment
-              </h1>
-              <p class="lead text-white font-weight-bold">
-                « Bâtisseur de notoriété »
-              </p>
-              <p class="lead text-white font-weight-medium">
-                Une chose est sûre, votre priorité est de signer puis de réaliser vos chantier !
-              </p>
-              <p class="lead text-white font-weight-medium">
-                Cependant, que vous souhaitiez <strong>augmenter votre visibilité</strong> ou simplement <strong>cultiver votre notoriété</strong>, votre communication est un levier à ne pas négliger afin d’éviter les trous dans le planning.
-              </p>
-              <p class="lead text-white font-weight-medium">
-                L’Office du bâtiment allie <strong>les compétences d’une agence de communication</strong> à une connaissance approfondie des besoins de votre secteur.
-              </p>
-              <b-button
-                :to="{ name: 'contact' }"
-                variant="primary"
-                size="lg"
-                pill
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-5-enter"
               >
-                Contactez-nous
-              </b-button>
+                <h1 class="h2 text-white mb-4">
+                  Agence de communication pour le bâtiment
+                </h1>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-4-enter"
+              >
+                <p class="lead text-white font-weight-bold">
+                  « Bâtisseur de notoriété »
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-3-enter"
+              >
+                <p class="lead text-white font-weight-medium">
+                  Une chose est sûre, votre priorité est de signer puis de réaliser vos chantier !
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-2-enter"
+              >
+                <p class="lead text-white font-weight-medium">
+                  Cependant, que vous souhaitiez <strong>augmenter votre visibilité</strong> ou simplement <strong>cultiver votre notoriété</strong>, votre communication est un levier à ne pas négliger afin d’éviter les trous dans le planning.
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-1-enter"
+              >
+                <p class="lead text-white font-weight-medium">
+                  L’Office du bâtiment allie <strong>les compétences d’une agence de communication</strong> à une connaissance approfondie des besoins de votre secteur.
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-enter"
+              >
+                <b-button
+                  :to="{ name: 'contact' }"
+                  variant="primary"
+                  size="lg"
+                  pill
+                >
+                  Contactez-nous
+                </b-button>
+              </transition>
             </div>
           </b-col>
         </b-row>
@@ -346,7 +376,7 @@
                 Pour que chaque entreprise puisse bénéficier des services à sa mesure, nous vous invitons à vous rapprocher de notre service commercial afin de vous proposer la solution la plus adaptée à vos besoins.
               </p>
               <b-button
-                v-b-modal.modal-contact
+                :to="{ name: 'contact' }"
                 variant="primary"
                 pill
                 size="lg"

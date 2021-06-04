@@ -7,26 +7,51 @@
             md="7"
           >
             <div class="caption ml-3 ml-md-0">
-              <h1 class="h2 text-white mb-4">
-                L’office du bâtiment
-              </h1>
-              <p class="lead text-white font-weight-medium">
-                Après 15 ans au service des entreprises du BTP, OFFICE DU BATIMENT est né en 2020 au carrefour du <strong>Tarn et Garonne</strong>, du <strong>Lot et Garonne</strong> et du <strong>Gers</strong> et se positionne comme un <strong>interlocuteur privilégié</strong> des professionnels du secteur.
-              </p>
-              <p class="lead text-white font-weight-medium">
-                Qu’il s'agisse d’<strong>améliorer la visibilité et la notoriété</strong> de votre PME, de promouvoir de courageux créateurs ou d'épauler de vaillants artisans dans leur <strong>gestion au quotidien</strong>, nous mettons chaque jour toute notre énergie pour proposer l'accompagnement le plus adapté à chacun des profils qui nous sollicite.
-              </p>
-              <p class="lead text-white font-weight-medium">
-                Parce que votre temps est précieux, nous sommes le point d'ancrage de votre <strong>communication</strong>, l'interlocuteur unique qui centralisera la mise en œuvre de toutes vos actions.
-              </p>
-              <b-button
-                :to="{ name: 'contact' }"
-                variant="primary"
-                size="lg"
-                pill
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-4-enter"
               >
-                Contactez-nous
-              </b-button>
+                <h1 class="h2 text-white mb-4">
+                  L’office du bâtiment
+                </h1>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-3-enter"
+              >
+                <p class="lead text-white font-weight-medium">
+                  Après 15 ans au service des entreprises du BTP, OFFICE DU BATIMENT est né en 2020 au carrefour du <strong>Tarn et Garonne</strong>, du <strong>Lot et Garonne</strong> et du <strong>Gers</strong> et se positionne comme un <strong>interlocuteur privilégié</strong> des professionnels du secteur.
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-2-enter"
+              >
+                <p class="lead text-white font-weight-medium">
+                  Qu’il s'agisse d’<strong>améliorer la visibilité et la notoriété</strong> de votre PME, de promouvoir de courageux créateurs ou d'épauler de vaillants artisans dans leur <strong>gestion au quotidien</strong>, nous mettons chaque jour toute notre énergie pour proposer l'accompagnement le plus adapté à chacun des profils qui nous sollicite.
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-1-enter"
+              >
+                <p class="lead text-white font-weight-medium">
+                  Parce que votre temps est précieux, nous sommes le point d'ancrage de votre <strong>communication</strong>, l'interlocuteur unique qui centralisera la mise en œuvre de toutes vos actions.
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-enter"
+              >
+                <b-button
+                  :to="{ name: 'contact' }"
+                  variant="primary"
+                  size="lg"
+                  pill
+                >
+                  Contactez-nous
+                </b-button>
+              </transition>
             </div>
           </b-col>
         </b-row>
@@ -313,7 +338,7 @@
                 Pour que chaque entreprise puisse bénéficier des services à sa mesure, nous vous invitons à vous rapprocher de notre service commercial afin de vous proposer la solution la plus adaptée à vos besoins.
               </p>
               <b-button
-                v-b-modal.modal-contact
+                :to="{ name: 'contact' }"
                 variant="primary"
                 pill
                 size="lg"
@@ -334,6 +359,7 @@ import { actions } from '~/mixins/actions'
 export default {
   mixins: [actions],
   data: () => ({
+    show: false,
     posts: [],
     productions: [],
     currentIndex: null
@@ -358,6 +384,9 @@ export default {
         }
       ]
     }
+  },
+  mounted () {
+    this.show = true
   }
 }
 </script>

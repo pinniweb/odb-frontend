@@ -10,21 +10,46 @@
             class="d-flex flex-column justify-content-center"
           >
             <div class="ml-3 ml-md-0">
-              <div class="h4 mb-4 text-white">
-                Personne ne peut le nier, un jour il a bien fallu commencer&nbsp;!
-              </div>
-              <p class="lead font-weight-medium text-white">
-                Et lorsqu’on se lance, on n'est pas ou peu connu, il faut donc se donner toutes les chances de se faire remarquer.
-              </p>
-              <p class="lead font-weight-medium text-white">
-                A l'<strong>OFFICE DU BATIMENT</strong>, nous sommes aussi conscients que les budgets au démarrage ne sont pas extensibles, c'est pour cela que nous avons créé <strong>COM'PACK&nbsp;!</strong>
-              </p>
-              <p class="lead font-weight-medium text-white">
-                Le kit de communication conçu pour les créateurs de micro et TPE à un <strong>rapport qualité/prix IMBATTABLE&nbsp;!</strong>
-              </p>
-              <p class="lead font-weight-medium text-white mb-0">
-                Mieux, nous nous déplaçons vous rencontrez dans un rayon de 100 kms autour de <strong>Valence d'Agen, dans les départements du Tarn et Garonne (Montauban, Moissac, Castelsarrasin, Montech), Lot et Garonne (Agen, Villeneuve sur Lot, Marmande, Nérac, Tonneins) et Gers (Auch, fleurance, Lectoure, Condom, Eauze)</strong>
-              </p>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-4-enter"
+              >
+                <div class="h4 mb-4 text-white">
+                  Personne ne peut le nier, un jour il a bien fallu commencer&nbsp;!
+                </div>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-3-enter"
+              >
+                <p class="lead font-weight-medium text-white">
+                  Et lorsqu’on se lance, on n'est pas ou peu connu, il faut donc se donner toutes les chances de se faire remarquer.
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-2-enter"
+              >
+                <p class="lead font-weight-medium text-white">
+                  A l'<strong>OFFICE DU BATIMENT</strong>, nous sommes aussi conscients que les budgets au démarrage ne sont pas extensibles, c'est pour cela que nous avons créé <strong>COM'PACK&nbsp;!</strong>
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-1-enter"
+              >
+                <p class="lead font-weight-medium text-white">
+                  Le kit de communication conçu pour les créateurs de micro et TPE à un <strong>rapport qualité/prix IMBATTABLE&nbsp;!</strong>
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-enter"
+              >
+                <p class="lead font-weight-medium text-white mb-0">
+                  Mieux, nous nous déplaçons vous rencontrez dans un rayon de 100 kms autour de <strong>Valence d'Agen, dans les départements du Tarn et Garonne (Montauban, Moissac, Castelsarrasin, Montech), Lot et Garonne (Agen, Villeneuve sur Lot, Marmande, Nérac, Tonneins) et Gers (Auch, fleurance, Lectoure, Condom, Eauze)</strong>
+                </p>
+              </transition>
             </div>
           </b-col>
         </b-row>
@@ -527,7 +552,7 @@
                 Pour que chaque entreprise puisse bénéficier des services à sa mesure, nous vous invitons à vous rapprocher de notre service commercial afin de vous proposer la solution la plus adaptée à vos besoins.
               </p>
               <b-button
-                v-b-modal.modal-contact
+                :to="{ name: 'contact' }"
                 variant="primary"
                 pill
                 size="lg"

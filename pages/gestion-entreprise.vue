@@ -9,23 +9,43 @@
             md="6"
           >
             <div class="caption ml-3 ml-md-0">
-              <h1 class="h3 text-white mb-5">
-                Office du Bâtiment,<br> votre partenaire gestion au quotidien
-              </h1>
-              <p class="lead text-white font-weight-medium">
-                Parce que votre temps est précieux, <span class="font-weight-bold">Office du bâtiment</span> vous propose d’externaliser votre gestion administrative et commerciale en vous permettant de vous concentrer sur votre cœur de métier.
-              </p>
-              <p class="lead text-white font-weight-bold mb-5">
-                Déléguez votre gestion, optimisez votre temps!
-              </p>
-              <b-button
-                variant="primary"
-                pill
-                :to="{ name: 'contact' }"
-                size="lg"
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-3-enter"
               >
-                Demandez une démonstration
-              </b-button>
+                <h1 class="h3 text-white mb-5">
+                  Office du Bâtiment,<br> votre partenaire gestion au quotidien
+                </h1>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-2-enter"
+              >
+                <p class="lead text-white font-weight-medium">
+                  Parce que votre temps est précieux, <span class="font-weight-bold">Office du bâtiment</span> vous propose d’externaliser votre gestion administrative et commerciale en vous permettant de vous concentrer sur votre cœur de métier.
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-delay-1-enter"
+              >
+                <p class="lead text-white font-weight-bold mb-5">
+                  Déléguez votre gestion, optimisez votre temps!
+                </p>
+              </transition>
+              <transition
+                appear
+                appear-active-class="fade-in-down-enter"
+              >
+                <b-button
+                  variant="primary"
+                  pill
+                  :to="{ name: 'contact' }"
+                  size="lg"
+                >
+                  Demandez une démonstration
+                </b-button>
+              </transition>
             </div>
           </b-col>
         </b-row>
@@ -324,7 +344,7 @@
                 Pour que chaque entreprise puisse bénéficier des services à sa mesure, nous vous invitons à vous rapprocher de notre service commercial afin de vous proposer la solution la plus adaptée à vos besoins.
               </p>
               <b-button
-                v-b-modal.modal-contact
+                :to="{ name: 'contact' }"
                 variant="primary"
                 pill
                 size="lg"
