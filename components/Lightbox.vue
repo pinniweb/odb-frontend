@@ -7,6 +7,7 @@
         class="border-0"
         :img-src="image.url"
         overlay
+        @click="showModal(index)"
       />
     </b-card-group>
     <b-modal
@@ -22,6 +23,7 @@
         :interval="4000"
         controls
         indicators
+        fade
         background="#ababab"
         img-width="1024"
         img-height="480"
@@ -31,10 +33,10 @@
           :key="index"
         >
           <template #img>
-            <div
-              class="lightbox-image"
-              :style="{ backgroundImage: 'url(' + image.url + ')' }"
-            />
+            <img
+              :src="image.url"
+              width="100%"
+            >
           </template>
         </b-carousel-slide>
       </b-carousel>
