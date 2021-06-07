@@ -1,18 +1,14 @@
 <template>
   <div class="lightbox">
-    <b-row>
-      <b-col
+    <b-card-group columns>
+      <b-card
         v-for="(image, index) in images"
         :key="index"
-        md="4"
-      >
-        <div
-          class="lightbox-thumbnail"
-          :style="{ backgroundImage: 'url(' + image.url + ')' }"
-          @click="showModal(index)"
-        />
-      </b-col>
-    </b-row>
+        class="border-0"
+        :img-src="image.url"
+        overlay
+      />
+    </b-card-group>
     <b-modal
       :id="modalId"
       centered

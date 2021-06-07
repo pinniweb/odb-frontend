@@ -70,6 +70,9 @@ export default {
       families: ['Lexend:400,500,700']
     }
   },
+  env: {
+    apiUrl: process.env.NODE_ENV === 'production' ? 'https://api.officedubatiment.com' : 'http://localhost:1337'
+  },
   bootstrapVue: {
     bootstrapCSS: false,
     bootstrapVueCSS: false,
