@@ -1,5 +1,35 @@
 .navbar {
+  &-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(md) {
+      width: 100px;
+    }
+  }
+  &-nav {
+    margin-right: 200px;
+  }
+  .nav-item {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
   .nav-link {
     font-weight: 700;
+    @include media-breakpoint-up(md) {
+      letter-spacing: -1px;
+      padding: 1.5rem 0;
+      transition: all .5s;
+      text-transform: uppercase;
+      &:hover {
+        transform: translateY(.75rem);
+      }
+    }       
   }
 }

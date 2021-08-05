@@ -1,48 +1,68 @@
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+.animated {
+  &.delay-1 {
+    animation-delay: 0.25s;
   }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+  &.delay-2 {
+    animation-delay: .5s;
+  }
+  &.delay-3 {
+    animation-delay: .75s;
+  }
+  &.delay-4 {
+    animation-delay: 1s;
+  }
+  &.delay-5 {
+    animation-delay: 1.25s;
+  }
+  &.delay-6 {
+    animation-delay: 1.5s;
   }
 }
 
-.fadeInDown {
-  animation-name: fadeInDown;
+.bounce-in-left-enter {
+  animation: bounceInLeft 1s;
 }
 
-.fade-in-down-enter {
-  animation: fadeInDown 1s;
+.bounce-in-left-delay-1-enter {
+  animation: bounceInLeft 1s .1s;
 }
 
-.fade-in-down-enter,
-.fade-in-down-delay-1-enter,
-.fade-in-down-delay-2-enter,
-.fade-in-down-delay-3-enter,
-.fade-in-down-delay-4-enter,
-.fade-in-down-delay-5-enter {
-  opacity: 0;
+.bounce-in-left-delay-2-enter {
+  animation: bounceInLeft 1s .2s;
 }
 
-.fade-in-down-delay-1-enter {
-  animation: fadeInDown 1s .1s;
+.bounce-in-left-delay-3-enter {
+  animation: bounceInLeft 1s .3s;
 }
 
-.fade-in-down-delay-2-enter {
-  animation: fadeInDown 1s .2s;
+.bounce-in-left-delay-4-enter {
+  animation: bounceInLeft 1s .4s;
 }
 
-.fade-in-down-delay-3-enter {
-  animation: fadeInDown 1s .3s;
+.bounce-in-left-delay-5-enter {
+  animation: bounceInLeft 1s .5s;
 }
 
-.fade-in-down-delay-4-enter {
-  animation: fadeInDown 1s .4s;
+.bounce-in-right-enter {
+  animation: bounceInRight 1s;
 }
 
-.fade-in-down-delay-5-enter {
-  animation: fadeInDown 1s .5s;
+.bounce-in-right-delay-1-enter {
+  animation: bounceInRight 1s .1s;
+}
+
+.bounce-in-right-delay-2-enter {
+  animation: bounceInRight 1s .2s;
+}
+
+.bounce-in-right-delay-3-enter {
+  animation: bounceInRight 1s .3s;
+}
+
+.bounce-in-right-delay-4-enter {
+  animation: bounceInRight 1s .4s;
+}
+
+.bounce-in-right-delay-5-enter {
+  animation: bounceInRight 1s .5s;
 }

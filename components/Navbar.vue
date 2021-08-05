@@ -1,7 +1,10 @@
 <template>
-  <b-container>
+  <b-container
+    class="px-0 mx-0"
+    fluid
+  >
     <b-navbar
-      class="px-2 px-md-0 py-0"
+      class="px-2 px-md-4 py-0"
     >
       <b-navbar-brand to="/">
         <h1>
@@ -52,6 +55,14 @@
           Gestion
         </b-nav-item>
         <b-nav-item
+          :to="{ name: 'actualites' }"
+          class="mx-2"
+          exact
+          exact-active-class="text-primary"
+        >
+          Actualités
+        </b-nav-item>
+        <b-nav-item
           :to="{ name: 'contact' }"
           class="mx-2"
           exact
@@ -60,29 +71,23 @@
           Contact
         </b-nav-item>
       </b-navbar-nav>
-      <b-button
-        variant="primary"
-        pill
-        class="d-none d-lg-inline-block ml-4"
-        href="https://app.officedubatiment.com"
-      >
-        Espace client
-      </b-button>
-      <b-button
-        variant="link"
-        pill
-        class="d-inline-block d-lg-none ml-4"
-        href="https://app.officedubatiment.com"
-      >
-        <i class="fad fa-user-circle fa-2x" />
-      </b-button>
-      <b-button
-        v-b-toggle.sidebar
-        class="d-inline-block d-lg-none ml-auto"
-        variant="link"
-      >
-        <i class="fad fa-bars fa-2x" />
-      </b-button>
+      <div class="navbar-right bg-primary">
+        <b-button
+          variant="outline-white"
+          pill
+          class="d-none d-lg-inline-block"
+          href="https://app.officedubatiment.com"
+        >
+          Espace client
+        </b-button>
+        <b-button
+          v-b-toggle.sidebar
+          class="d-inline-block d-lg-none"
+          variant="link"
+        >
+          <i class="fad fa-bars fa-2x text-white" />
+        </b-button>
+      </div>
       <b-sidebar
         id="sidebar"
         right
@@ -121,6 +126,13 @@
               Gestion
             </b-nav-item>
             <b-nav-item
+              :to="{ name: 'actualites' }"
+              exact
+              exact-active-class="text-primary"
+            >
+              Actualités
+            </b-nav-item>
+            <b-nav-item
               :to="{ name: 'contact' }"
               exact
               exact-active-class="text-primary"
@@ -128,6 +140,16 @@
               Contact
             </b-nav-item>
           </b-nav>
+          <div class="d-flex align-items-center justify-content-center p-5">
+            <b-button
+              variant="outline-white"
+              pill
+              class="d-inline-block d-lg-none"
+              href="https://app.officedubatiment.com"
+            >
+              Espace client
+            </b-button>
+          </div>
         </div>
       </b-sidebar>
     </b-navbar>

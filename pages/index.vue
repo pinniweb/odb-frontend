@@ -9,39 +9,26 @@
             <div class="caption ml-3 ml-md-0">
               <transition
                 appear
-                appear-active-class="fade-in-down-delay-4-enter"
+                appear-active-class="bounce-in-right-delay-1-enter"
               >
-                <h1 class="h2 text-white mb-4">
-                  L’office du bâtiment
-                </h1>
+                <div>
+                  <h1 class="h2 text-white mb-4">
+                    L’office du bâtiment
+                  </h1>
+                  <p class="lead text-white font-weight-medium">
+                    Après 15 ans au service des entreprises du BTP, OFFICE DU BATIMENT est né en 2020 au carrefour du <strong>Tarn et Garonne</strong>, du <strong>Lot et Garonne</strong> et du <strong>Gers</strong> et se positionne comme un <strong>interlocuteur privilégié</strong> des professionnels du secteur.
+                  </p>
+                  <p class="lead text-white font-weight-medium">
+                    Qu’il s'agisse d’<strong>améliorer la visibilité et la notoriété</strong> de votre PME, de promouvoir de courageux créateurs ou d'épauler de vaillants artisans dans leur <strong>gestion au quotidien</strong>, nous mettons chaque jour toute notre énergie pour proposer l'accompagnement le plus adapté à chacun des profils qui nous sollicite.
+                  </p>
+                  <p class="lead text-white font-weight-medium">
+                    Parce que votre temps est précieux, nous sommes le point d'ancrage de votre <strong>communication</strong>, l'interlocuteur unique qui centralisera la mise en œuvre de toutes vos actions.
+                  </p>
+                </div>
               </transition>
               <transition
                 appear
-                appear-active-class="fade-in-down-delay-3-enter"
-              >
-                <p class="lead text-white font-weight-medium">
-                  Après 15 ans au service des entreprises du BTP, OFFICE DU BATIMENT est né en 2020 au carrefour du <strong>Tarn et Garonne</strong>, du <strong>Lot et Garonne</strong> et du <strong>Gers</strong> et se positionne comme un <strong>interlocuteur privilégié</strong> des professionnels du secteur.
-                </p>
-              </transition>
-              <transition
-                appear
-                appear-active-class="fade-in-down-delay-2-enter"
-              >
-                <p class="lead text-white font-weight-medium">
-                  Qu’il s'agisse d’<strong>améliorer la visibilité et la notoriété</strong> de votre PME, de promouvoir de courageux créateurs ou d'épauler de vaillants artisans dans leur <strong>gestion au quotidien</strong>, nous mettons chaque jour toute notre énergie pour proposer l'accompagnement le plus adapté à chacun des profils qui nous sollicite.
-                </p>
-              </transition>
-              <transition
-                appear
-                appear-active-class="fade-in-down-delay-1-enter"
-              >
-                <p class="lead text-white font-weight-medium">
-                  Parce que votre temps est précieux, nous sommes le point d'ancrage de votre <strong>communication</strong>, l'interlocuteur unique qui centralisera la mise en œuvre de toutes vos actions.
-                </p>
-              </transition>
-              <transition
-                appear
-                appear-active-class="fade-in-down-enter"
+                appear-active-class="bounce-in-left-delay-1-enter"
               >
                 <b-button
                   :to="{ name: 'contact' }"
@@ -56,6 +43,29 @@
           </b-col>
         </b-row>
       </b-container>
+      <div class="shape-divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          />
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          />
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          />
+        </svg>
+      </div>
     </section>
     <section class="communication">
       <b-container>
@@ -68,6 +78,7 @@
         </b-row>
         <b-row>
           <b-col
+            v-animate-onscroll="'animated bounceInLeft delay-1'"
             md="6"
           >
             <p class="lead text-center text-md-left font-weight-medium mx-3 mx-md-0">
@@ -81,6 +92,7 @@
             </p>
           </b-col>
           <b-col
+            v-animate-onscroll="'animated bounceInRight delay-2'"
             md="5"
             offset-md="1"
             class="d-flex flex-column align-items-center justify-content-center"
@@ -116,23 +128,26 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-col md="12">
-            <b-tabs
-              content-class="mt-5"
+          <b-col
+            v-for="(production, index) in productions"
+            :key="index"
+            md="4"
+            class="mb-4"
+          >
+            <button-icon
+              v-animate-onscroll="'animated zoomIn delay-' + (index + 1)"
+              class="p-5 icon"
+              block
+              :color="production.color"
+              :link="{ name: 'realisations', params: { section: slugify(production.title) } }"
             >
-              <b-tab
-                v-for="(production, index) in productions"
-                :key="index"
-                :title="production.title"
-                :active="index === 0"
-                title-item-class="h6 mb-0"
-              >
-                <lightbox
-                  :modal-id="'lightbox-modal-' + index"
-                  :images="production.images"
-                />
-              </b-tab>
-            </b-tabs>
+              <slot>
+                <i :class="'fad fa-' + production.picto + ' fa-4x mb-3'" />
+                <div class="font-weight-bold">
+                  {{ production.title }}
+                </div>
+              </slot>
+            </button-icon>
           </b-col>
         </b-row>
       </b-container>
@@ -151,6 +166,7 @@
               Parce que nous avons tous été un jour dans la peau du <strong>créateur</strong> et que la concurrence est rude, nous avons créé une offre spécialement destinée aux entrepreneurs qui se lancent dans l'aventure.
             </p>
             <b-card
+              v-animate-onscroll="'animated bounceIn delay-4'"
               no-body
               class="border-0 shadow py-5 mb-5"
             >
@@ -227,6 +243,7 @@
       <b-container>
         <b-row>
           <b-col
+            v-animate-onscroll="'animated bounceInLeft delay-1'"
             md="6"
           >
             <h2 class="h4 text-primary text-center text-md-left mb-4">
@@ -259,6 +276,7 @@
       <b-container>
         <b-row>
           <b-col
+            v-animate-onscroll="'animated bounceInLeft delay-1'"
             md="6"
             class="d-flex justify-content-center mb-4 mb-md-0"
           >
@@ -269,6 +287,7 @@
             </div>
           </b-col>
           <b-col
+            v-animate-onscroll="'animated bounceInRight delay-2'"
             offset-md="1"
             md="5"
             class="d-flex flex-column justify-content-center"
@@ -354,6 +373,7 @@
 </template>
 
 <script>
+import { kebabCase } from 'lodash'
 import { actions } from '~/mixins/actions'
 
 export default {
@@ -362,7 +382,9 @@ export default {
     show: false,
     posts: [],
     productions: [],
-    currentIndex: null
+    currentIndex: null,
+    intersect: null,
+    threshold: 0.5
   }),
   async fetch () {
     this.posts = await this.findPosts({
@@ -387,6 +409,11 @@ export default {
   },
   mounted () {
     this.show = true
+  },
+  methods: {
+    slugify (title) {
+      return kebabCase(title)
+    }
   }
 }
 </script>

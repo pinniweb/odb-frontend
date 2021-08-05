@@ -12,43 +12,25 @@
             <div class="ml-3 ml-md-0">
               <transition
                 appear
-                appear-active-class="fade-in-down-delay-4-enter"
+                appear-active-class="bounce-in-right-enter"
               >
-                <div class="h4 mb-4 text-white">
-                  Personne ne peut le nier, un jour il a bien fallu commencer&nbsp;!
+                <div>
+                  <div class="h4 mb-4 text-white">
+                    Personne ne peut le nier, un jour il a bien fallu commencer&nbsp;!
+                  </div>
+                  <p class="lead font-weight-medium text-white">
+                    Et lorsqu’on se lance, on n'est pas ou peu connu, il faut donc se donner toutes les chances de se faire remarquer.
+                  </p>
+                  <p class="lead font-weight-medium text-white">
+                    A l'<strong>OFFICE DU BATIMENT</strong>, nous sommes aussi conscients que les budgets au démarrage ne sont pas extensibles, c'est pour cela que nous avons créé <strong>COM'PACK&nbsp;!</strong>
+                  </p>
+                  <p class="lead font-weight-medium text-white">
+                    Le kit de communication conçu pour les créateurs de micro et TPE à un <strong>rapport qualité/prix IMBATTABLE&nbsp;!</strong>
+                  </p>
+                  <p class="lead font-weight-medium text-white mb-0">
+                    Mieux, nous nous déplaçons vous rencontrez dans un rayon de 100 kms autour de <strong>Valence d'Agen, dans les départements du Tarn et Garonne (Montauban, Moissac, Castelsarrasin, Montech), Lot et Garonne (Agen, Villeneuve sur Lot, Marmande, Nérac, Tonneins) et Gers (Auch, fleurance, Lectoure, Condom, Eauze)</strong>
+                  </p>
                 </div>
-              </transition>
-              <transition
-                appear
-                appear-active-class="fade-in-down-delay-3-enter"
-              >
-                <p class="lead font-weight-medium text-white">
-                  Et lorsqu’on se lance, on n'est pas ou peu connu, il faut donc se donner toutes les chances de se faire remarquer.
-                </p>
-              </transition>
-              <transition
-                appear
-                appear-active-class="fade-in-down-delay-2-enter"
-              >
-                <p class="lead font-weight-medium text-white">
-                  A l'<strong>OFFICE DU BATIMENT</strong>, nous sommes aussi conscients que les budgets au démarrage ne sont pas extensibles, c'est pour cela que nous avons créé <strong>COM'PACK&nbsp;!</strong>
-                </p>
-              </transition>
-              <transition
-                appear
-                appear-active-class="fade-in-down-delay-1-enter"
-              >
-                <p class="lead font-weight-medium text-white">
-                  Le kit de communication conçu pour les créateurs de micro et TPE à un <strong>rapport qualité/prix IMBATTABLE&nbsp;!</strong>
-                </p>
-              </transition>
-              <transition
-                appear
-                appear-active-class="fade-in-down-enter"
-              >
-                <p class="lead font-weight-medium text-white mb-0">
-                  Mieux, nous nous déplaçons vous rencontrez dans un rayon de 100 kms autour de <strong>Valence d'Agen, dans les départements du Tarn et Garonne (Montauban, Moissac, Castelsarrasin, Montech), Lot et Garonne (Agen, Villeneuve sur Lot, Marmande, Nérac, Tonneins) et Gers (Auch, fleurance, Lectoure, Condom, Eauze)</strong>
-                </p>
               </transition>
             </div>
           </b-col>
@@ -69,6 +51,7 @@
               Parce que nous avons tous été un jour dans la peau du <strong>créateur</strong> et que la concurrence est rude, nous avons créé une offre spécialement destinée aux entrepreneurs qui se lancent dans l'aventure.
             </p>
             <b-card
+              v-animate-onscroll="'animated bounceIn delay-4'"
               no-body
               class="border-0 shadow py-5 mb-5"
             >

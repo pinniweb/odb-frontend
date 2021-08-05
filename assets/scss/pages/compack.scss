@@ -25,6 +25,24 @@
         bottom: 0;
         @include gradient-y-three-colors(rgba($black, .25), rgba($black, .1), 50%, rgba($black, .25));
       }
+      .shape-divider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        svg {
+          position: relative;
+          display: block;
+          width: calc(300% + 1.3px);
+          height: 90px;
+        }
+        .shape-fill {
+          fill: #f8f9fa;
+        }
+      }
     }
     &.contact {
       padding-bottom: 24rem;

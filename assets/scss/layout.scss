@@ -9,6 +9,12 @@ body {
   justify-content: center;
   z-index: $zindex-fixed;
   background: transparent;
+  .container-fluid {
+    height: $header-height;
+    .navbar {
+      height: $header-height;
+    }
+  }
   &.fixed-top {
     position: fixed;
     background-color: $white;

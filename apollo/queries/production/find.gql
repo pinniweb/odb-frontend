@@ -3,6 +3,8 @@ query FindProductionQuery ($sort: String, $limit: Int, $start: Int, $where: JSON
     _id
     title
     description
+    picto
+    color
     images {
       url              
     }

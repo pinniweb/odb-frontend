@@ -13,6 +13,7 @@
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/google-analytics": "^2.4.0",
+    "animate.sass": "^1.0.1",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "cookieparser": "^0.1.0",
@@ -24,6 +25,8 @@
     "nuxt-webfontloader": "^1.1.0",
     "sass-loader": "^10.0.2",
     "showdown": "^1.9.1",
+    "vue-animate-onscroll": "^1.0.8",
+    "vue-carousel": "^0.18.0",
     "vue-fixed-header": "^3.2.15",
     "vue-scrollto": "^2.20.0",
     "vuelidate": "^0.7.6"
