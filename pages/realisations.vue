@@ -5,7 +5,7 @@
   >
     <section
       v-for="production in productions"
-      :id="slugify(production.title)"
+      :id="production.slug"
       :key="production._id"
       class="py-5"
     >

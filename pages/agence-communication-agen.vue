@@ -109,66 +109,34 @@
             v-animate-onscroll="'animated bounceInRight delay-2'"
             md="6"
           >
-            <b-row>
+            <b-row
+              v-for="production in filter(productions, ['slug', 'logo'])"
+              :key="production._id"
+            >
               <b-col
+                v-for="(image, index) in slice(production.images, 0, 6)"
+                :key="index"
                 md="6"
                 class="d-flex align-items-center justify-content-center mb-4"
               >
                 <img
-                  src="/images/communication/logo-1.png"
+                  :src="image.url"
                   alt=""
                   width="128px"
                 >
               </b-col>
               <b-col
-                md="6"
-                class="d-flex align-items-center justify-content-center mb-4"
+                md="12"
+                class="d-flex justify-content-center"
               >
-                <img
-                  src="/images/communication/logo-2.png"
-                  alt=""
-                  width="128px"
+                <b-button
+                  :to="{ name: 'realisations', params: { section: production.slug } }"
+                  variant="primary"
+                  size="lg"
+                  pill
                 >
-              </b-col>
-              <b-col
-                md="6"
-                class="d-flex align-items-center justify-content-center mb-4"
-              >
-                <img
-                  src="/images/communication/logo-3.png"
-                  alt=""
-                  width="128px"
-                >
-              </b-col>
-              <b-col
-                md="6"
-                class="d-flex align-items-center justify-content-center mb-4"
-              >
-                <img
-                  src="/images/communication/logo-4.png"
-                  alt=""
-                  width="128px"
-                >
-              </b-col>
-              <b-col
-                md="6"
-                class="d-flex align-items-center justify-content-center mb-4"
-              >
-                <img
-                  src="/images/communication/logo-5.png"
-                  alt=""
-                  width="128px"
-                >
-              </b-col>
-              <b-col
-                md="6"
-                class="d-flex align-items-center justify-content-center mb-4"
-              >
-                <img
-                  src="/images/communication/logo-6.png"
-                  alt=""
-                  width="128px"
-                >
+                  Voir tous les logos
+                </b-button>
               </b-col>
             </b-row>
           </b-col>
@@ -179,11 +147,36 @@
             md="6"
             class="d-none d-md-flex align-items-start justify-content-center"
           >
-            <img
-              src="/images/communication/website.png"
-              alt="site internet"
-              width="520px"
+            <b-row
+              v-for="production in filter(productions, ['slug', 'website'])"
+              :key="production._id"
             >
+              <b-col
+                v-for="(image, index) in slice(production.images, 0, 6)"
+                :key="index"
+                md="6"
+                class="d-flex align-items-center justify-content-center mb-4"
+              >
+                <img
+                  :src="image.url"
+                  alt=""
+                  width="128px"
+                >
+              </b-col>
+              <b-col
+                md="12"
+                class="d-flex justify-content-center"
+              >
+                <b-button
+                  :to="{ name: 'realisations', params: { section: production.slug } }"
+                  variant="primary"
+                  size="lg"
+                  pill
+                >
+                  Voir tous les sites internet
+                </b-button>
+              </b-col>
+            </b-row>
           </b-col>
           <b-col
             v-animate-onscroll="'animated bounceInRight delay-2'"
@@ -238,12 +231,96 @@
               Si besoin, notre agence <strong>personnalise</strong> également votre papier entête, enveloppes, carnets de bons etc...
             </p>
           </b-col>
+          <b-col
+            v-animate-onscroll="'animated bounceInRight delay-2'"
+            md="6"
+          >
+            <b-row
+              v-for="production in filter(productions, ['slug', 'print'])"
+              :key="production._id"
+            >
+              <b-col
+                v-for="(image, index) in slice(production.images, 0, 6)"
+                :key="index"
+                md="6"
+                class="d-flex align-items-center justify-content-center mb-4"
+              >
+                <img
+                  :src="image.url"
+                  alt=""
+                  width="128px"
+                >
+              </b-col>
+              <b-col
+                md="12"
+                class="d-flex justify-content-center"
+              >
+                <b-button
+                  :to="{ name: 'realisations', params: { section: production.slug } }"
+                  variant="primary"
+                  size="lg"
+                  pill
+                >
+                  Voir toutes les impressions papiers
+                </b-button>
+              </b-col>
+            </b-row>
+          </b-col>
         </b-row>
         <b-row>
           <b-col
-            v-animate-onscroll="'animated bounceInUp delay-1'"
+            v-animate-onscroll="'animated bounceInLeft delay-1'"
             md="6"
-          />
+            class="d-none d-md-flex align-items-start justify-content-center"
+          >
+            <b-row
+              v-for="production in filter(productions, ['slug', 'car'])"
+              :key="production._id"
+            >
+              <b-col
+                v-for="(image, index) in slice(production.images, 0, 6)"
+                :key="index"
+                md="6"
+                class="d-flex align-items-center justify-content-center mb-4"
+              >
+                <img
+                  :src="image.url"
+                  alt=""
+                  width="128px"
+                >
+              </b-col>
+            </b-row>
+            <b-row
+              v-for="production in filter(productions, ['slug', 'banner'])"
+              :key="production._id"
+            >
+              <b-col
+                v-for="(image, index) in slice(production.images, 0, 6)"
+                :key="index"
+                md="6"
+                class="d-flex align-items-center justify-content-center mb-4"
+              >
+                <img
+                  :src="image.url"
+                  alt=""
+                  width="128px"
+                >
+              </b-col>
+              <b-col
+                md="12"
+                class="d-flex justify-content-center"
+              >
+                <b-button
+                  :to="{ name: 'realisations', params: { section: production.slug } }"
+                  variant="primary"
+                  size="lg"
+                  pill
+                >
+                  Voir tous les supports de communication
+                </b-button>
+              </b-col>
+            </b-row>
+          </b-col>
           <b-col
             v-animate-onscroll="'animated bounceInRight delay-2'"
             md="6"
@@ -411,12 +488,21 @@
 </template>
 
 <script>
+import { filter, slice } from 'lodash'
+import { actions } from '~/mixins/actions'
 export default {
+  mixins: [actions],
   data: () => ({
+    productions: [],
     form: {
       company: 'odb'
     }
   }),
+  async fetch () {
+    this.productions = await this.findProductions({
+      limit: -1
+    })
+  },
   head () {
     return {
       title: 'Agence de communication | Office du Bâtiment',
@@ -427,6 +513,14 @@ export default {
           content: 'Implanté au carrefour du Tarn et Garonne, du Lot et Garonne et du Gers, Office du bâtiment allie les compétences d’une agence de communication à une connaissance approfondie des métiers du BTP.'
         }
       ]
+    }
+  },
+  methods: {
+    filter (arr, params) {
+      return filter(arr, params)
+    },
+    slice (arr, start, end) {
+      return slice(arr, start, end)
     }
   }
 }

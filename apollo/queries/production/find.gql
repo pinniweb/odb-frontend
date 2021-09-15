@@ -5,6 +5,7 @@ query FindProductionQuery ($sort: String, $limit: Int, $start: Int, $where: JSON
     description
     picto
     color
+    slug
     images {
       url              
     }

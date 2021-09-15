@@ -139,7 +139,7 @@
               class="p-5 icon"
               block
               :color="production.color"
-              :link="{ name: 'realisations', params: { section: slugify(production.title) } }"
+              :link="{ name: 'realisations', params: { section: production.slug } }"
             >
               <slot>
                 <i :class="'fad fa-' + production.picto + ' fa-4x mb-3'" />
@@ -373,7 +373,6 @@
 </template>
 
 <script>
-import { kebabCase } from 'lodash'
 import { actions } from '~/mixins/actions'
 
 export default {
@@ -409,11 +408,6 @@ export default {
   },
   mounted () {
     this.show = true
-  },
-  methods: {
-    slugify (title) {
-      return kebabCase(title)
-    }
   }
 }
 </script>
