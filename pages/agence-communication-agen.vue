@@ -248,7 +248,7 @@
                 <img
                   :src="image.url"
                   alt=""
-                  width="128px"
+                  width="160px"
                 >
               </b-col>
               <b-col
@@ -271,7 +271,6 @@
           <b-col
             v-animate-onscroll="'animated bounceInLeft delay-1'"
             md="6"
-            class="d-none d-md-flex align-items-start justify-content-center"
           >
             <b-row
               v-for="production in filter(productions, ['slug', 'car'])"
