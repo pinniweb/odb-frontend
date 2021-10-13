@@ -61,10 +61,10 @@
               <div class="d-flex justify-content-center">
                 <div class="card-price mb-5">
                   <div class="h2 text-center text-white">
-                    299€ HT
+                    399€ HT
                   </div>
                   <div class="text-center text-white font-weight-medium font-italic">
-                    Soit 358.80€ TTC
+                    Soit 478.80€ TTC
                   </div>
                 </div>
               </div>
